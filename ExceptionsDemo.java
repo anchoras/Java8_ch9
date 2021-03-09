@@ -16,8 +16,8 @@ class ExceptionsDemo {
             catch (ArithmeticException exc) {
                 System.out.println("Dividing by zero");
             }
-            catch (ArrayIndexOutOfBoundsException exc) {
-                System.out.println("Element by given index was not found");
+            catch (Throwable exc) {
+                System.out.println("Exception was");
             }
         }
     }
