@@ -4,8 +4,8 @@
 
 class ExceptionsDemo {
     public static void main(String args[]) {
-        int numsNumer[] = { 4, 8, 16, 32, 64, 128 };
-        int numsDenum[] = { 2, 0, 4, 4, 0, 8 };
+        int numsNumer[] = { 4, 8, 16, 32, 64, 128, 512 };
+        int numsDenum[] = { 2, 0, 4, 4, 0, 8, 16, 2 };
 
         for(int i = 0; i<numsDenum.length; i++) {
             try {
@@ -15,6 +15,9 @@ class ExceptionsDemo {
 
             catch (ArithmeticException exc) {
                 System.out.println("Dividing by zero");
+            }
+            catch (ArrayIndexOutOfBoundsException exc) {
+                System.out.println("Element by given index was not found");
             }
         }
     }
