@@ -21,6 +21,8 @@ class ThrowableDemo {
             System.out.println(exc);
             System.out.println("\nCall stack: ");
             exc.printStackTrace();
+            System.out.println("\nLocalized: ");
+            exc.getLocalizedMessagegit();
         }
         System.out.println("After CATCH operator");
     }
